@@ -23,6 +23,11 @@ public class WarmPicker : MonoBehaviour
 			TryToReleaseNode();
 		}
 
+		if (Input.GetMouseButtonUp(1))
+		{
+			TryToFixedNode();
+		}
+
 		if (pickUpNode != null)
 		{
 			MoveWarmNode();
@@ -52,6 +57,15 @@ public class WarmPicker : MonoBehaviour
 		if (pickUpNode != null)
 		{
 			pickUpNode.ReleaseNode();
+			pickUpNode = null;
+		}
+	}
+
+	void TryToFixedNode()
+	{
+		if (pickUpNode != null)
+		{
+//			pickUpNode.FixedNode();
 			pickUpNode = null;
 		}
 	}

@@ -20,6 +20,11 @@ public class WarmNode : MonoBehaviour
 		rigidbody.isKinematic = false;
 	}
 
+	public void FixedNode()
+	{
+		rigidbody.isKinematic = !rigidbody.isKinematic;
+	}
+
 	public void MoveTo(Vector3 position)
 	{
 		Vector3 newPos = new Vector3(position.x, position.y, transform.position.z);
