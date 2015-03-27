@@ -29,6 +29,7 @@ public class WarmNode : MonoBehaviour
 	{
 		Vector3 newPos = new Vector3(position.x, position.y, transform.position.z);
 		transform.position = newPos;
+//		transform.position = position;
 	}
 
 }

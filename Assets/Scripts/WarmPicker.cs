@@ -78,7 +78,7 @@ public class WarmPicker : MonoBehaviour
 //		LayerMask mask = new LayerMask();
 //		mask.value = LayerMask.NameToLayer("Default");
 
-		if (Physics.Raycast(ray, out hit, 100, ~(1 << 8)))
+		if (Physics.Raycast(ray, out hit, 100, 1 << 0))
 		{
 			pickUpNode.MoveTo(hit.point);
 		}
